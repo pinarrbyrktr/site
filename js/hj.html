@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahte Satış Kanalları</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Öne Çıkan Ürünler</h1>
+    <div id="fake-product">
+        <h2>Çok Satan Widget X</h2>
+        <p>Fiyat: 299.99₺</p>
+        <button onclick="revealRealContent()">Daha Fazla Bilgi</button>
+    </div>
+    <div id="real-content" class="hidden">
+        <h2>Sanat Eseri: "Gizli Çizgi"</h2>
+        <p>Fiyat: 4999.99₺</p>
+        <img src="eser.jpg" alt="Sanat Eseri Görseli" width="300">
+    </div>
+    <script>
+        function revealRealContent() {
+            document.getElementById("fake-product").style.display = "none";
+            document.getElementById("real-content").style.display = "block";
+        }
+    </script>
+</body>
+</html>
+
